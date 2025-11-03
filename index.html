@@ -4,7 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <style media="screen">
-    nav { border: 1px solid black; }
+    my-receipt{
+      display: block;
+      text-align: center;
+      background-color: white;
+      width: 300px; 
+      margin: 2rem auto;
+      height: fit-content;
+      padding: 1rem;
+      font-family: 'ReceiptContentFont', sans-serif;
+      color: black;
+    }
+    my-receipt p, 
+    my-receipt span, 
+    my-receipt li{
+      font-family: 'ReceiptContentFont', sans-serif;
+      font-size: medium;
+    }
+    .receipt_sections {
+      display:flex; 
+      flex-direction: row; 
+      justify-content: space-between; 
+      width:100%;
+    }
+    .receipt_items {
+      text-align: left;
+    }
+    .receipt_items p {
+      margin: 2px; 
+      padding: 0;
+    }
+    p.receipt_comments{
+      font-size: small;
+      margin-left: 8px;
+    }
   </style>
   <link href="images/favicon.ico" rel="icon"/>
   <link href="styles/main.css" rel="stylesheet" />
@@ -19,7 +52,7 @@
         <a href="projects.html">Projects</a>
         <a href="contact.html">Contact</a>
     </nav>
-    <p style="font-family: 'HandwrittenMarker', sans-serif;">Rosie Wang</p>
+    <p style="font-family: 'HandwrittenMarker', sans-serif; white-space: nowrap;">Rosie Wang</p>
   </header>
   <main>
     <h1>Rosie Wang</h1>
@@ -35,6 +68,50 @@
         <p>I specialize in full-stack software development and data analysis.</p>
       </article>
     </section>
+    <h2>
+      Want a grab-and-go?
+    </h2>
+    <my-receipt>
+      <h2 style="font-family: 'ReceiptTitleFont', sans-serif; color: black;">Rosie's Snapshot</h2>
+      <p>A Software Engineer & Data Scientist</p>
+      <hr class="dashed_border">
+      <section class="receipt_sections">
+        <section class="receipt_items" style="width:70%;">
+          <p>Items</p>
+          <p>-----</p>
+          <p>Golang backend builder</p>
+          <p class="receipt_comments">**High-performance, concurrent**</p>
+          <p>Interactive website builder</p>
+          <p class="receipt_comments">**CSS, JavaScript, React.js**</p>
+          <p>Machine Learning & LLM</p>
+          <p class="receipt_comments">**Python and CUDA**</p>
+          <p>Graph related data analysis</p>
+          <p class="receipt_comments">**using NetworkX and Neo4j**</p>
+          <p>Add-ons:</p>
+          <p class="receipt_comments">SQL, Redis, git, AWS, and more</p>
+        </section>
+        <section class="receipt_items" style="width:20%;">
+          <p>Counts</p>
+          <p>-----</p>
+          <p>2y+</p>
+          <p class="receipt_comments">&nbsp;</p>
+          <p>1y+</p>
+          <p class="receipt_comments">&nbsp;</p>
+          <p>3y+</p>
+          <p class="receipt_comments">&nbsp;</p>
+          <p>2y+</p>
+          <p class="receipt_comments">&nbsp;</p>
+          <p>n+</p>
+        </section>
+      </section>
+      <hr class="dashed_border">
+      <section class="receipt_sections">
+        <p>Total</p>
+        <p>One Top Choice!</p>
+      </section>
+      <p>Enjoy the skill blend!</p>
+      <p>Rosie Wang, xiw183@ucsd.edu</p>
+    </my-receipt>
     <h3>
       Top 3 Skills I'm Focusing On
       <svg width="20" height="20">
