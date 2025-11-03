@@ -1,6 +1,14 @@
 :root {
   --main-color: rgb(226, 217, 199);
   --text-color: rgb(120, 184, 81);
+  --alternative-color: rgb(201, 204, 180);
+}
+
+@font-face {
+  font-family: "HandwrittenMarker";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Cookiemonster-gv11.ttf") format("truetype");
 }
 
 html,
@@ -12,14 +20,25 @@ body {
     padding: 0;
 }
 
+header {
+    background-color: var(--alternative-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 main {
     margin: 1rem;
+    gap: 2rem;
 }
 
 footer {
-    margin: 1rem;
+    background-color: var(--alternative-color);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;  
 }
-
 nav {
     border: none;
     width: 100%;
@@ -28,7 +47,7 @@ nav {
     display: flex;
     justify-content: left;
     align-items: center;
-    background-color: var(--main-color);
+    background-color: var(--alternative-color);
 }
 nav a {
     text-decoration: none;
@@ -37,13 +56,16 @@ nav a {
     margin: 0 1rem;
 }
 
+nav a:hover {
+    color: var(--text-color);
+}
+
 #connection_method {
   display: flex;
   justify-content: left;
   gap: 1rem;
   font-size: 1rem;
 }
-
 #connection_method a {
   text-decoration: none;
   color: var(--text-color);
@@ -51,5 +73,4 @@ nav a {
 
 #connection_method a:hover {
   text-decoration: underline;
-  color: var(--text-color);
 }

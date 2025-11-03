@@ -19,6 +19,7 @@
         <a href="projects.html">Projects</a>
         <a href="contact.html">Contact</a>
     </nav>
+    <p style="font-family: 'HandwrittenMarker', sans-serif;">Rosie Wang</p>
   </header>
   <main>
     <h1>Rosie Wang</h1>
@@ -26,11 +27,14 @@
       <p>Current Msc. in Electrical and Computer Engineering at UCSD</p>
       <p>B.Eng in Electrical and Computer Engineering at SJTU</p>
     </div>
-    <h2>Welcome!</h2>
-    <hello-world></hello-world>
-    <img src="images/main.jpeg" alt="main photo" width="300">
-    <p>I'm Rosie Wang, a <strong>Software Engineer</strong> and <strong>Data Scientist</strong>.</p>
-    <p>I specialize in full-stack software development and data analysis.</p>
+    <section id="introduction" style="display: flex; flex-direction: row; gap: 1rem;">
+      <img src="images/main.jpeg" alt="main photo" width="300">
+      <article id="bio" style="flex-direction: column;">
+        <h2>Welcome!</h2>
+        <p>I'm Rosie Wang, a <strong>Software Engineer</strong> and <strong>Data Scientist</strong>.</p>
+        <p>I specialize in full-stack software development and data analysis.</p>
+      </article>
+    </section>
     <h3>
       Top 3 Skills I'm Focusing On
       <svg width="20" height="20">
@@ -58,12 +62,14 @@
 
   <footer>
     <p id="connection_method"><a href="mailto:xiw183@ucsd.edu">Email</a> | <a href="https://github.com/Leullque">GitHub</a> | <a href="https://linkedin.com/in/xiruo-wang-rr/">LinkedIn</a></p>
-    <p>
+    <p id="address">
     Rosie Wang<br>
     3869 Miramar Street<br>
     La Jolla, CA 92092
     </p>
-    <p>&copy; 2025 <span id="LegalIdentification">Rosie Wang</span></p>
+    <p>&copy; 2025 <span id="LegalIdentification">Rosie Wang</span>, All Right Reserved</p>
+    
+
   </footer>
 </body>
 </html>
