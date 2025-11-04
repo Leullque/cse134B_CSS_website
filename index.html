@@ -9,7 +9,7 @@
       text-align: center;
       background-color: white;
       width: 300px; 
-      margin: 2rem auto;
+      margin: 1rem 0rem;
       height: fit-content;
       padding: 1rem;
       font-family: 'ReceiptContentFont', sans-serif;
@@ -56,7 +56,7 @@
     </nav>
     <p style="font-family: 'HandwrittenMarker', sans-serif; white-space: nowrap;">Rosie Wang</p>
   </header>
-  <main>
+  <main style="width: 70%; margin: 0rem auto; display: flex; flex-direction: column;">
     <h1>Rosie Wang</h1>
     <div id="currentStatus">
       <p>Current Msc. in Electrical and Computer Engineering at UCSD</p>
@@ -79,58 +79,95 @@
     <h2>
       Want a grab-and-go?
     </h2>
-    <my-receipt>
-      <h2 style="font-family: 'ReceiptTitleFont', sans-serif; color: black;">Rosie's Snapshot</h2>
-      <p>A Software Engineer & Data Scientist</p>
-      <hr class="dashed_border">
-      <section class="receipt_sections">
-        <section class="receipt_items" style="width:70%;">
-          <p>Items</p>
-          <p>-----</p>
-          <p>Golang backend builder</p>
-          <p class="receipt_comments">**High-performance, concurrent**</p>
-          <p>Interactive website builder</p>
-          <p class="receipt_comments">**CSS, JavaScript, React.js**</p>
-          <p>Machine Learning & LLM</p>
-          <p class="receipt_comments">**Python and CUDA**</p>
-          <p>Graph related data analysis</p>
-          <p class="receipt_comments">**using NetworkX and Neo4j**</p>
-          <p>Add-ons:</p>
-          <p class="receipt_comments">SQL, Redis, git, AWS, and more</p>
+    <section id="content" style="display: flex; flex-direction: row; gap: 1.1rem; flex-wrap: wrap;">
+      <my-receipt>
+        <h2 style="font-family: 'ReceiptTitleFont', sans-serif; color: black;">Rosie's Snapshot</h2>
+        <p>A Software Engineer & Data Scientist</p>
+        <hr class="dashed_border">
+        <section class="receipt_sections">
+          <section class="receipt_items" style="width:70%;">
+            <p>Items</p>
+            <p>-----</p>
+            <p>Golang backend builder</p>
+            <p class="receipt_comments">**High-performance, concurrent**</p>
+            <p>Interactive website builder</p>
+            <p class="receipt_comments">**CSS, JavaScript, React.js**</p>
+            <p>Machine Learning & LLM</p>
+            <p class="receipt_comments">**Python and CUDA**</p>
+            <p>Graph related data analysis</p>
+            <p class="receipt_comments">**using NetworkX and Neo4j**</p>
+            <p>Add-ons:</p>
+            <p class="receipt_comments">SQL, Redis, git, AWS, and more</p>
+          </section>
+          <section class="receipt_items" style="width:20%;">
+            <p>Counts</p>
+            <p>-----</p>
+            <p>2y+</p>
+            <p class="receipt_comments">&nbsp;</p>
+            <p>1y+</p>
+            <p class="receipt_comments">&nbsp;</p>
+            <p>3y+</p>
+            <p class="receipt_comments">&nbsp;</p>
+            <p>2y+</p>
+            <p class="receipt_comments">&nbsp;</p>
+            <p>n+</p>
+          </section>
         </section>
-        <section class="receipt_items" style="width:20%;">
-          <p>Counts</p>
-          <p>-----</p>
-          <p>2y+</p>
-          <p class="receipt_comments">&nbsp;</p>
-          <p>1y+</p>
-          <p class="receipt_comments">&nbsp;</p>
-          <p>3y+</p>
-          <p class="receipt_comments">&nbsp;</p>
-          <p>2y+</p>
-          <p class="receipt_comments">&nbsp;</p>
-          <p>n+</p>
+        <hr class="dashed_border">
+        <section class="receipt_sections">
+          <p>Total</p>
+          <p>One Top Choice!</p>
         </section>
+        <p>Enjoy the skill blend!</p>
+        <p>Rosie Wang, xiw183@ucsd.edu</p>
+      </my-receipt>
+      <section id="top-skills">
+        <h3>
+          Top 3 Skills I'm Focusing On
+          <svg width="20" height="20">
+            <circle cx="10" cy="14" r="6" fill="green"></circle>
+          </svg>
+        </h3>
+        <ol>
+          <li>High-performance, concurrent backend applications with <strong>Go</strong></li>
+          <li>Machine Learning & LLM with <strong>Python</strong></li>
+          <li>Graph related data analysis with <strong>NetworkX</strong> and <strong>Neo4j</strong></li>
+        </ol>
+        <h3>
+          Top 3 Programming Languages I Use
+          <svg width="20" height="20">
+            <circle cx="10" cy="14" r="6" fill="green"></circle>
+          </svg>
+        </h3>
+        <ol>
+          <li>Go</li>
+          <li>C++</li>
+          <li>Python</li>
+        </ol>
+        <h3>
+          Top 3 Courses I'm Working On
+          <svg width="20" height="20">
+            <circle cx="10" cy="14" r="6" fill="green"></circle>
+          </svg>
+        </h3>
+        <ol>
+          <li>Web Client Languages</li>
+          <li>Data Analysis and Design for Biology</li>
+          <li>Biomedical Imaging</li>
+        </ol>
+        <h3>
+          Top 3 Hobbies I Enjoy
+          <svg width="20" height="20">
+            <circle cx="10" cy="14" r="6" fill="green"></circle>
+          </svg>
+        </h3>
+        <ol>
+          <li>Animation</li>
+          <li>Cross Stitching</li>
+          <li>Reading</li>
+        </ol>
       </section>
-      <hr class="dashed_border">
-      <section class="receipt_sections">
-        <p>Total</p>
-        <p>One Top Choice!</p>
-      </section>
-      <p>Enjoy the skill blend!</p>
-      <p>Rosie Wang, xiw183@ucsd.edu</p>
-    </my-receipt>
-    <h3>
-      Top 3 Skills I'm Focusing On
-      <svg width="20" height="20">
-        <circle cx="10" cy="14" r="6" fill="green"></circle>
-      </svg>
-    </h3>
-    <ol>
-      <li>High-performance, concurrent backend applications with <strong>Go</strong></li>
-      <li>Machine Learning & LLM with <strong>Python</strong></li>
-      <li>Graph related data analysis with <strong>NetworkX</strong> and <strong>Neo4j</strong></li>
-    </ol>
+    </section>
     <p>Explore my portfolio and connect with me here. I'm interested in collaboration and job opportunities.</p>
     <script src="https://example.org/remote.js"></script>
     <script>
