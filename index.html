@@ -15,11 +15,13 @@
       font-family: 'ReceiptContentFont', sans-serif;
       color: black;
     }
-    my-receipt p, 
-    my-receipt span, 
-    my-receipt li{
+    my-receipt p {
       font-family: 'ReceiptContentFont', sans-serif;
       font-size: medium;
+    }
+    my-receipt:hover {
+      transform: scale(1.05) rotate(1deg);
+      transition: transform 0.3s ease;
     }
     .receipt_sections {
       display:flex; 
@@ -60,8 +62,14 @@
       <p>Current Msc. in Electrical and Computer Engineering at UCSD</p>
       <p>B.Eng in Electrical and Computer Engineering at SJTU</p>
     </div>
-    <section id="introduction" style="display: flex; flex-direction: row; gap: 1rem;">
-      <img src="images/main.jpeg" alt="main photo" width="300">
+    <section id="introduction" style="display: flex; flex-direction: row; gap: 1rem; flex-wrap: wrap;">
+      <picture>
+        <source srcset="images/main.webp" type="image/webp">
+        <source srcset="images/main_small.jpg" type="image/jpeg" media="(max-width: 600px)">
+        <source srcset="images/main_medium.jpg" type="image/jpeg" media="(max-width: 1024px)">
+        <source srcset="images/main_large.jpg" type="image/jpeg">
+        <img src="images/main.jpeg" alt="main photo" width="300">
+      </picture>
       <article id="bio" style="flex-direction: column;">
         <h2>Welcome!</h2>
         <p>I'm Rosie Wang, a <strong>Software Engineer</strong> and <strong>Data Scientist</strong>.</p>

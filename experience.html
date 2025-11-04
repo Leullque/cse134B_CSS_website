@@ -7,11 +7,10 @@
     nav { border: 1px solid black; }
     course-card {
       display: inline-block;
-      border: 1px solid black;
       padding: 1px 2px;
       margin: 1px;
       border-radius: 5px;
-      background-color: rgb(253, 239, 213);
+      background-color: var(--alternative-color);
     }
   </style>
   <link href="images/favicon.ico" rel="icon" />
@@ -32,20 +31,42 @@
     <h1>Experience</h1>
     <section id="education">
       <h2>School</h2>
-        <h3>University of California, San Diego</h3>
-        <p><i>MSc. in Electrical and Computer Engineering</i></p>
-        <p>September 2024 - Present</p>
-        <p>Courses: <course-card>Recommender Sys&Web Mining</course-card> <course-card>Computer Graphics</course-card> <course-card>Web Client Languages</course-card></p>
+        <article>
+          <header class="experience-header">  
+            <h3>University of California, San Diego</h3>
+            <picture class="experience-logo">
+              <source srcset="images/ucsd-seal.webp" type="image/webp" media="(max-width: 600px)">
+              <img src="images/ucsd-seal.svg" alt="UCSD Logo">
+            </picture>
+          </header>
+          <p><i>MSc. in Electrical and Computer Engineering</i></p>
+          <p>September 2024 - Present</p>
+          <p>Courses: <course-card>Recommender Sys&Web Mining</course-card> <course-card>Computer Graphics</course-card> <course-card>Web Client Languages</course-card></p>
 
-        <h3>Shanghai Jiao Tong University</h3>
+        </article>
+        <article>
+          <header class="experience-header">  
+            <h3>Shanghai Jiao Tong University</h3>
+            <picture class="experience-logo">
+              <source srcset="images/sjtu_logo.webp" type="image/webp" media="(max-width: 600px)">
+              <img src="images/sjtu_logo.png" alt="SJTU Logo">
+            </picture>
+          </header>
         <p><i>B.Eng in Electrical and Computer Engineering</i></p>
         <p>September 2020 - June 2024</p>
         <p>Courses: <course-card>Advanced Data Structures and Algorithms</course-card> <course-card>Operating Systems</course-card> <course-card>Networks</course-card></p>
+        </article>
     </section>
     <section id="workExperience">
       <h2>Work</h2>
         <article>
-            <h3>HeartByte</h3>
+            <header class="experience-header">
+              <h3>HeartByte</h3>
+              <picture class="experience-logo">
+                <source srcset="images/HeartByte.webp" type="image/webp" media="(max-width: 600px)">
+                <img src="images/HeartByte.svg" alt="HeartByte Logo">
+              </picture>
+            </header>
             <p><em>AI writing</em> web platform</p>
             <p>Apr 2025 - June 2025</p>
             <ul>
@@ -55,7 +76,13 @@
             </ul>
         </article>
         <article>
-            <h3>Enflame Technology</h3>
+            <header class="experience-header">
+              <h3>Enflame Technology</h3>
+              <picture class="experience-logo">
+                <source srcset="images/enflame_logo.webp" type="image/webp" media="(max-width: 600px)">
+                <img src="images/enflame_logo.jpeg" alt="Enflame Technology Logo">
+              </picture>
+            </header>
             <p><em>Deep Learning chips</em> development company - Performace Lab</p>
             <p>Jan 2024 - Apr 2024</p>
             <ul>
@@ -66,12 +93,20 @@
     </section>
     <section id="teachingExperience">
       <h2>Teaching Experience</h2>
-        <h3>Teaching Assistant for Physics II at SJTU</h3>
+      <article>
+        <header class="experience-header">
+          <h3>Teaching Assistant for Physics II at SJTU</h3>
+        </header>
         <p>Sep 2023 - Jan 2023</p>
         <p>Held recitation classes, provided office hours support, and graded homework and exam papers.</p>
-        <h3>Teaching Assistant for Physics Laboratory at SJTU</h3>
+      </article>
+      <article>
+        <header class="experience-header">
+          <h3>Teaching Assistant for Physics Laboratory at SJTU</h3>
+        </header>
         <p>May 2022 - Dec 2022</p>
         <p>Led lab classes for freshman and sophomore students, graded lab reports, and provided office hours support.</p>
+      </article>
     </section>
   </main>
 
